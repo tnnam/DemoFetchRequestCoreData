@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		849475A720A292A400E0434A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849475A620A292A400E0434A /* AppDelegate.swift */; };
-		849475A920A292A400E0434A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849475A820A292A400E0434A /* ViewController.swift */; };
+		849475A920A292A400E0434A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849475A820A292A400E0434A /* DetailViewController.swift */; };
 		849475AC20A292A400E0434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849475AA20A292A400E0434A /* Main.storyboard */; };
 		849475AF20A292A400E0434A /* DemoFetchRequestCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 849475AD20A292A400E0434A /* DemoFetchRequestCoreData.xcdatamodeld */; };
 		849475B120A292A400E0434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849475B020A292A400E0434A /* Assets.xcassets */; };
 		849475B420A292A400E0434A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849475B220A292A400E0434A /* LaunchScreen.storyboard */; };
+		849475BC20A2A1AC00E0434A /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849475BB20A2A1AC00E0434A /* PeopleTableViewController.swift */; };
+		84979C0320A2D7B30065B7D2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84979C0220A2D7B30065B7D2 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		849475A320A292A400E0434A /* DemoFetchRequestCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFetchRequestCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849475A620A292A400E0434A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		849475A820A292A400E0434A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		849475A820A292A400E0434A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		849475AB20A292A400E0434A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849475AE20A292A400E0434A /* DemoFetchRequestCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoFetchRequestCoreData.xcdatamodel; sourceTree = "<group>"; };
 		849475B020A292A400E0434A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849475B320A292A400E0434A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849475B520A292A400E0434A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849475BB20A2A1AC00E0434A /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		84979C0220A2D7B30065B7D2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8418BC9920A2ED2A00FB3CFE /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				84979C0220A2D7B30065B7D2 /* DataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		8418BC9A20A2EDA000FB3CFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849475BB20A2A1AC00E0434A /* PeopleTableViewController.swift */,
+				849475A820A292A400E0434A /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8494759A20A292A400E0434A = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				849475A620A292A400E0434A /* AppDelegate.swift */,
-				849475A820A292A400E0434A /* ViewController.swift */,
+				8418BC9920A2ED2A00FB3CFE /* DataServices */,
+				8418BC9A20A2EDA000FB3CFE /* Controller */,
 				849475AA20A292A400E0434A /* Main.storyboard */,
 				849475B020A292A400E0434A /* Assets.xcassets */,
 				849475B220A292A400E0434A /* LaunchScreen.storyboard */,
@@ -140,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				849475AF20A292A400E0434A /* DemoFetchRequestCoreData.xcdatamodeld in Sources */,
-				849475A920A292A400E0434A /* ViewController.swift in Sources */,
+				849475A920A292A400E0434A /* DetailViewController.swift in Sources */,
+				849475BC20A2A1AC00E0434A /* PeopleTableViewController.swift in Sources */,
 				849475A720A292A400E0434A /* AppDelegate.swift in Sources */,
+				84979C0320A2D7B30065B7D2 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
